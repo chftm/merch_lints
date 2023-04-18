@@ -1,0 +1,67 @@
+# Very Good Analysis provides a strict but sensible set of default rules.
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    # This rule is often useless and annoying.
+    public_member_api_docs: false
+
+    # We prefer the default sorting order from
+    # Dart Code Metrics, which puts constructors after fields.
+    sort_constructors_first: false
+
+# Dart Code Metrics provides additional linting rules.
+analyzer:
+  plugins:
+    - dart_code_metrics
+
+dart_code_metrics:
+  # Enable all Dart Code Metrics rules by default.
+  extends:
+    - package:dart_code_metrics_presets/all.yaml
+    - package:dart_code_metrics_presets/intl.yaml
+    - package:dart_code_metrics_presets/flame.yaml
+
+  metrics:
+    cyclomatic-complexity: 5
+    maintainability-index: 50
+    maximum-nesting-level: 5
+    source-lines-of-code: 20
+    weight-of-class: 0.33
+
+  anti-patterns:
+    - long-method
+
+  rules:
+    # The 'late' keyword is often useful.
+    - avoid-late-keyword: false
+
+    # We're Russian, so we use non-ASCII symbols in strings
+    # pretty often.
+    - avoid-non-ascii-symbols: false
+
+    # Using the non-null operator is often safe and much
+    # more convenient than the '?' operator.
+    - avoid-non-null-assertion: false
+
+    # Putting the 'child' named argument in widgets last
+    # makes the widget tree more readable.
+    - arguments-ordering:
+        child-last: true
+
+    # Nested conditional expressions look bad.
+    - prefer-conditional-expressions:
+        ignore-nested: true
+
+    - prefer-correct-identifier-length:
+        # Ignore 'i' because it's often used in for loops.
+        exceptions:
+          - "i"
+
+        # The default max length of 300 is too long.
+        max-identifier-length: 30
+
+    # Lists with more than 4 items are much more readable with
+    # a trailing comma.
+    - prefer-trailing-comma:
+        break-on: 4

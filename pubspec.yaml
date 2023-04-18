@@ -1,0 +1,12 @@
+name: merch_lints
+description: Dart linter rules used by the CHFTM team.
+version: 1.0.0
+repository: https://github.com/chftm/merch_lints
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  dart_code_metrics: ^5.7.2
+  dart_code_metrics_presets: ^1.6.0
+  very_good_analysis: ^4.0.0+1
