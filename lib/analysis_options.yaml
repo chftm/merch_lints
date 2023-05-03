@@ -65,3 +65,14 @@ dart_code_metrics:
     # a trailing comma.
     - prefer-trailing-comma:
         break-on: 4
+
+    - prefer-static-class:
+        # Allow private global variables. Using them is generally fine and often
+        # much simpler than creating a dedicated class for them.
+        ignore-private: true
+
+        # Allow Riverpod providers, which are defined as global variables.
+        # Riverpod providers being global is fine, since they are fully
+        # immutable and testible.
+        ignore-names:
+          - (.*)Provider
