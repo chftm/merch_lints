@@ -20,6 +20,10 @@ linter:
     # Avoid unsafe HTML APIs
     unsafe_html: true
 
+    # Specifying type literals in patterns is a mistake
+    # which is easy to make, so it should trigger a lint.
+    type_literal_in_constant_pattern: true
+
 # Dart Code Metrics provides additional linting rules.
 analyzer:
   plugins:
