@@ -17,6 +17,9 @@ linter:
     # Highlights unused functions in executable libraries, generally good.
     unreachable_from_main: true
 
+    # Avoid unsafe HTML APIs
+    unsafe_html: true
+
 # Dart Code Metrics provides additional linting rules.
 analyzer:
   plugins:
