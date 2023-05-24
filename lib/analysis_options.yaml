@@ -10,6 +10,10 @@ linter:
     # Dart Code Metrics, which puts constructors after fields.
     sort_constructors_first: false
 
+    # The reasoning for this rule is explained in great detail here:
+    # https://dart-lang.github.io/linter/lints/avoid_implementing_value_types.html
+    avoid_implementing_value_types: true
+
 # Dart Code Metrics provides additional linting rules.
 analyzer:
   plugins:
