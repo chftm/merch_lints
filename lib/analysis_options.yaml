@@ -27,6 +27,9 @@ linter:
     # No reason not to enable this.
     unnecessary_null_aware_operator_on_extension_on_nullable: true
 
+    # Deprecated members are deprecated, you shouldn't use them.
+    deprecated_member_use_from_same_package: true
+
 # Dart Code Metrics provides additional linting rules.
 analyzer:
   plugins:
