@@ -24,6 +24,9 @@ linter:
     # which is easy to make, so it should trigger a lint.
     type_literal_in_constant_pattern: true
 
+    # No reason not to enable this.
+    unnecessary_null_aware_operator_on_extension_on_nullable: true
+
 # Dart Code Metrics provides additional linting rules.
 analyzer:
   plugins:
