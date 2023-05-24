@@ -14,6 +14,9 @@ linter:
     # https://dart-lang.github.io/linter/lints/avoid_implementing_value_types.html
     avoid_implementing_value_types: true
 
+    # Highlights unused functions in executable libraries, generally good.
+    unreachable_from_main: true
+
 # Dart Code Metrics provides additional linting rules.
 analyzer:
   plugins:
