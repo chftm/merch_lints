@@ -9,4 +9,4 @@ environment:
 dependencies:
   dart_code_metrics: ^5.7.2
   dart_code_metrics_presets: ^1.6.0
-  very_good_analysis: ^4.0.0+1
+  very_good_analysis: ^5.0.0+1
