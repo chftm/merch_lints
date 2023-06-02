@@ -1,3 +1,5 @@
+![Статус проекта: Вечнозелёный](https://raw.githubusercontent.com/chftm/brand/main/Project%20Status/evergreen.svg)
+
 # Merch Lints
 
 A set of linter rules for Dart and Flutter used by
