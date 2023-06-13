@@ -1,6 +1,6 @@
 name: merch_lints
 description: Dart linter rules used by the CHFTM team.
-version: 2.1.0
+version: 2.2.0
 repository: https://github.com/chftm/merch_lints
 homepage: https://github.com/chftm/merch_lints
 issue_tracker: https://github.com/chftm/merch_lints/issues

@@ -1,5 +1,9 @@
 # Changelog
 
+# 2.2.0
+
+- Allow `id` variable name
+
 # 2.1.0
 
 - Add `avoid_implementing_value_types`
