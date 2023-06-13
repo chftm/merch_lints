@@ -74,9 +74,12 @@ dart_code_metrics:
         ignore-nested: true
 
     - prefer-correct-identifier-length:
-        # Ignore 'i' because it's often used in for loops.
         exceptions:
+          # Ignore 'i' because it's often used in for loops.
           - "i"
+
+          # Ignore 'id' because it is a descriptive name
+          - "id"
 
         # The default max length of 300 is too long.
         max-identifier-length: 30
