@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0
+
+- Update `very_good_analysis` to `^6.0.0`
+
 ## 3.0.0
 
 - Migrate to `dart_code_linter`
