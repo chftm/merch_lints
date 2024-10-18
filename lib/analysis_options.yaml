@@ -7,7 +7,7 @@ linter:
     public_member_api_docs: false
 
     # We prefer the default sorting order from
-    # Dart Code Metrics, which puts constructors after fields.
+    # Dart Code Linter, which puts constructors after fields.
     sort_constructors_first: false
 
     # The reasoning for this rule is explained in great detail here:
@@ -30,17 +30,17 @@ linter:
     # Deprecated members are deprecated, you shouldn't use them.
     deprecated_member_use_from_same_package: true
 
-# Dart Code Metrics provides additional linting rules.
+# Dart Code Linter provides additional linting rules.
 analyzer:
   plugins:
-    - dart_code_metrics
+    - dart_code_linter
 
 dart_code_metrics:
-  # Enable all Dart Code Metrics rules by default.
+  # Enable all Dart Code Linter rules by default.
   extends:
-    - package:dart_code_metrics_presets/all.yaml
-    - package:dart_code_metrics_presets/intl.yaml
-    - package:dart_code_metrics_presets/flame.yaml
+    - package:dart_code_linter/presets/all.yaml
+    - package:dart_code_linter/presets/flame.yaml
+    - package:dart_code_linter/presets/intl.yaml
 
   metrics:
     cyclomatic-complexity: 5

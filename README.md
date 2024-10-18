@@ -7,7 +7,7 @@ A set of linter rules for Dart and Flutter used by
 
 This package combines rules from
 [very_good_analysis](https://pub.dev/packages/very_good_analysis) and
-[dart_code_metrics](https://dcm.dev) and tweaks a few defaults.
+[dart_code_linter](https://dcl.apps.bancolombia.com) and tweaks a few defaults.
 
 ## Usage
 
